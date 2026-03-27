@@ -32,10 +32,10 @@ const translations = {
         othersRel: "", 
         
         // Default input values
-        groomDefaultVal: "মোঃ ফয়জুল করিম",
-        brideDefaultVal: "মোসাঃ কাজল রেখা",
-        dateDefaultVal: "১০ই জুন, ২০১২ সাল",
-        venueDefaultVal: "ঝাউতলা, চট্টগ্রাম, বাংলাদেশ।",
+        groomDefaultVal: "মোহাম্মাদ শাকিল",
+        brideDefaultVal: "উম্মে ফাতিমা",
+        dateDefaultVal: "১৯ই জুন, ২০২০ সাল",
+        venueDefaultVal: "গুলশান, ঢাকা, বাংলাদেশ।",
         msgDefaultVal: "আমাদের বিবাহিত জীবনের সুখ ও সমৃদ্ধির জন্য সকলের কাছে দোয়া প্রার্থী।"
     },
     en: {
@@ -68,10 +68,10 @@ const translations = {
         othersRel: "", 
         
         // Default input values
-        groomDefaultVal: "Md. Faizul Karim",
-        brideDefaultVal: "Mst. Kajol Rekha",
-        dateDefaultVal: "June 10, 2012",
-        venueDefaultVal: "Jhautala, Chattogram, Bangladesh.",
+        groomDefaultVal: "Muhammad Shakil",
+        brideDefaultVal: "Umma Fatima",
+        dateDefaultVal: "June 19, 2020",
+        venueDefaultVal: "Gulsan, Dhaka, Bangladesh.",
         msgDefaultVal: "We seek everyone's prayers for our happy and prosperous married life."
     }
 };
@@ -91,8 +91,8 @@ function closeWeddingModal() {
     document.getElementById('in-date').value = t.dateDefaultVal;
     document.getElementById('in-venue').value = t.venueDefaultVal;
     document.getElementById('in-msg').value = t.msgDefaultVal;
-    document.getElementById('pv-g').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4xqz238X7tAnCXP2Q8cy1D2HNqWODSe6QQqoALMPow4hvXALRyAswn7IkbImr6CoomoETvzwrzadwZVPGhZmYI6jD_zcJn4og3eH2CLLh3E8CgRtslvJqiJbMlw65TafJJNNWOCJ7JlMOGBvQMWJUU-Yv4ao2Jt_3x_OSV3BCs4VzgjZOR9aI9SbpX90/s1781/fyzal.jpeg';
-    document.getElementById('pv-b').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNymKgEuEk43BCasxhyphenhyphen2WrAlXEuCOkhdPCRPyIglB4H33kt3Z0Myu0QhAlreWCN4icd-om-e0uiWsHt6iRwO6AGaRk29w4uOSvu2_wxdl-c0TKXh7Juj7U5SKbZq4doyg1tryMPrEERazhbMANEuYwPIg8V20bfhmyVPb_QM8kLS0viDqGgvwP0piE05g/s1184/kajol.webp';
+    document.getElementById('pv-g').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn887tiZB21rpOkBnL4q_-JBWlsNkmcKNSFZlM2jBh-WcFRpcPbNDW2d3ZhQhVI57_gWOtRcXqnrZ2Z9aCUypNWaDmMvVcaGMjS8AAfbai99FJEPdDMjptqp1tmr8pG1gsP9HQknAUubY20E0N2wYKI7gTIQyHWzMAsib-6xIK4u26r2KN9L6iBr0wjEs/s1600/wedingcardsampleman.jpg';
+    document.getElementById('pv-b').src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT0UPRjR-0AUUNkStAu_0QHuJpJ4bdtl1pr4ArG8xfE-Ool8088HKoU9YE9R39O33QYmiArVjxrvpzq1Y5y_jkGr_caEPKzC-SZ2egwcU-IV9wmSXkSKUdMeGIyN0_KpzZnBjO1tt7CysjO6sFFZyR3N6GwnRk_nFOWMZLPCLd9sjj9nI7qKfFiyTNpc8/s1600/wedingcardsampleFemale.jpg';
     document.getElementById('up-g').value = "";
     document.getElementById('up-b').value = "";
     curWedT = 1;
