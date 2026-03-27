@@ -12,6 +12,13 @@
 
 
 /* --- Mode Selector Container --- */
+.mode-selector-tranding{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ডেস্কটপে ৪ কলাম */
+    gap: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+}
 .mode-selector {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* ডেস্কটপে ৪ কলাম */
