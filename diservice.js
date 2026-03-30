@@ -66,7 +66,7 @@ function renderWaCards() {
 }
 
 function sendWhatsApp(service) {
-    const phone = "8801335468084";
+    const phone = "8801731313223";
     const message = encodeURIComponent("হ্যালো, আমি (" + service + ") এই সার্ভিসটি নিতে চাই!");
     const url = "https://wa.me/" + phone + "?text=" + message;
     window.open(url, "_blank");
