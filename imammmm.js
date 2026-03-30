@@ -20,7 +20,7 @@
     // Direct Download Function with NEW LINK
     function downloadImamPdf() {
         // Updated with the new Google Drive ID
-        var fileUrl = "https://drive.google.com/uc?export=download&id=1GLntRLikOoBcrS1vrQPuk3HMocGmL9j6";
+        var fileUrl = "https://drive.google.com/uc?export=download&id=1_QbYrrsyvaKJ7SJ-RTFmAic7qtCvoD_S";
         
         var a = document.createElement('a');
         a.href = fileUrl;
