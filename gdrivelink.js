@@ -1,4 +1,4 @@
-let currentFinalLink = "";
+
  // open model
 function openGdriveModal(){
     if(typeof setActiveMode === "function") setActiveMode("mode-gdrive-tool");
@@ -12,10 +12,10 @@ function closegdriveModal(){
     document.getElementById("txtInput-sg").value = "";
 }
 
-
-
-
   // Elements
+  const openBtn = document.getElementById("btnOpenModal");
+  const closeBtn = document.getElementById("btnCloseModal");
+  const overlay = document.getElementById("modalOverlay");
 
   const inputLink = document.getElementById("inputLink");
   const outputLink = document.getElementById("outputLink");
@@ -36,7 +36,40 @@ function closegdriveModal(){
   const qrSize = document.getElementById("qrSize");
   const qrColor = document.getElementById("qrColor");
 
- 
+  let currentFinalLink = "";
+
+  // Open Modal
+  openBtn.onclick = () => {
+    overlay.style.display = "flex";
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    setTimeout(() => inputLink.focus(), 150);
+  };
+
+  // Close Modal
+  closeBtn.onclick = closeModal;
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.style.display === "flex") {
+      closeModal();
+    }
+  });
+
+  function closeModal() {
+    overlay.style.display = "none";
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   // =========================
   // VALIDATION + CONVERSION
