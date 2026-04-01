@@ -1,4 +1,23 @@
-    /* Modal */
+.qr-overlay {
+    --brand: #5b52f3;
+    --brand-dark: #4338ca;
+    --brand-soft: #eef0ff;
+    --green: #10b981;
+    --green-dark: #059669;
+    --danger: #ef4444;
+    --danger-dark: #dc2626;
+    --text: #111827;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --soft-bg: #f3f4f6;
+    --white: #ffffff;
+    --transition: all 0.28s ease;
+  }
+
+
+
+
+/* Modal */
   .qr-modal-box {
     position: relative;
     width: 100%;
