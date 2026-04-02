@@ -1,4 +1,4 @@
-   .qr-overlay {
+   :root {
     --brand: #5b52f3;
     --brand-dark: #4338ca;
     --brand-soft: #eef0ff;
@@ -91,6 +91,7 @@
 
   .qr-input-card,
   .qr-output-card {
+    width: 100%;
     border-radius: 28px;
     padding: 22px;
   }
