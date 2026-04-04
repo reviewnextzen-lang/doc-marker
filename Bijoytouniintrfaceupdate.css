@@ -61,7 +61,7 @@
     width: 98%;
     height: 200px;
     font-family: SutonnyMJ;
-    font-size: 22px;
+    font-size: 20px;
     color: #000;
     border: 1px solid #999;
     outline: none;
@@ -107,11 +107,9 @@
 }
   
 .converter-grid {
-  background: #f8fafc;
-  padding: 28px;
+  padding: 10px;
   border-radius: 26px;
   width: 100%;
-  gap: 22px;
 }
 
   .converter-header {
