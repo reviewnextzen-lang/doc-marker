@@ -12,14 +12,56 @@ const TXT_MIN = "\u09AE\u09BF\u09A8\u09BF\u099F \u0986\u0997\u09C7"; // মি�
 
 // ✅ data
 const names=[
- "👉 শামীম আহমেদ","👉 নাহিদ হাসান","👉 সাইফুল ইসলাম",
- "👉 Tanvir Hasan","👉 Imran Khan","👉 Mahmudul Hasan"
+  "👉 শামীম আহমেদ", "👉 শাকিল হোসেন", "👉 আরিফুল ইসলাম", "👉 কামরুল হাসান", "👉 মেহেদী হাসান", 
+    "👉 তানভীর আহমেদ", "👉 জাহিদুল ইসলাম", "👉 নিলয় রহমান", "👉 সাইফুল ইসলাম", "👉 ফয়সাল আহমেদ", 
+    "👉 আরাফাত রহমান", "👉 রিপন মিয়া", "👉 সুমন আলী", "👉 রাজু আহমেদ", "👉 ইকবাল হোসেন", 
+    "👉 নাহিদ হাসান", "👉 রাসেল মাহমুদ", "👉 সজীব হোসেন", "👉 আশিকুর রহমান", "👉 মিজানুর রহমান", 
+    "👉 তারেক আজিজ", "👉 জুয়েল রানা", "👉 মনির হোসেন", "👉 ইলিয়াছ আহমেদ", "👉 রাশেদ খান", 
+    "👉 সোহেল রানা", "👉 মোস্তফা কামাল", "👉 সাব্বির আহমেদ", "👉 আবু সায়েম", "👉 হাসিবুর রহমান", 
+    "👉 মাসুম বিল্লাহ", "👉 লিটন শেখ", "👉 আসাদুল ইসলাম", "👉 বিপ্লব হোসেন", "👉 শাহীন আলম", 
+    "👉 জাহিদ হাসান", "👉 আল-আমিন হোসেন", "👉 কবির আহমেদ", "👉 মইনুল ইসলাম", "👉 ইমরান হোসেন", 
+    "👉 মামুনুর রশিদ", "👉 শরিফুল ইসলাম", "👉 আতিকুর রহমান", "👉 সানি আহমেদ", "👉 রনি হোসেন", 
+    "👉 আসিফ মাহমুদ", "👉 রাব্বি ইসলাম", "👉 পলাশ আহমেদ", "👉 নয়ন মিয়া", "👉 জসিম উদ্দিন", 
+    "👉 রফিকুল ইসলাম", "👉 সালাম চৌধুরী", "👉 কালাম হোসেন", "👉 রুবেল আহমেদ", "👉 রানা মাহমুদ", 
+    "👉 আলামিন ইসলাম", "👉 হিমেল হাসান", "👉 শাওন রহমান", "👉 সিফাত আহমেদ", "👉 তুহিন শেখ", 
+    "👉 মুরাদ হোসেন", "👉 পনির আহমেদ", "👉 আকাশ মাহমুদ", "👉 সাগর হোসেন", "👉 শান্ত ইসলাম", 
+    "👉 বিজয় কুমার", "👉 জয় আহমেদ", "👉 অনিমেষ দাস", "👉 সুজন মিয়া", "👉 রুহুল আমিন", 
+    "👉 জিয়াউল ইসলাম", "👉 শরীফ আহমেদ", "👉 তৌহিদ হাসান", "👉 জুবায়ের রহমান", "👉 ইসমাইল হোসেন", 
+    "👉 হানিফ মিয়া", "👉 আনোয়ার হোসেন", "👉 জাহাঙ্গীর আলম", "👉 ওসমান গনি", "👉 মোক্তার হোসেন", 
+    "👉 ফারুক আহমেদ", "👉 বাপ্পি রহমান", "👉 শুভ ইসলাম", "👉 অনিক হাসান", "👉 তপু চৌধুরী", 
+    "👉 সায়মন আহমেদ", "👉 ফাহিম মাহমুদ", "👉 হাসিবুর রহমান", "👉 আজিজুল হক", "👉 মাহিন আহমেদ", 
+    "👉 মিরাজ হোসেন", "👉 নাজমুল হুদা", "👉 আক্তারুজ্জামান", "👉 পারভেজ আহমেদ", "👉 সাদ্দাম হোসেন", 
+    "👉 মোবারক আলী", "👉 উজ্জ্বল হোসেন", "👉 মুন্না মিয়া", "👉 শওকত আলী", "👉 মানিক রহমান",
+    // নতুন ১০০টি ইংলিশ বাংলাদেশী নাম
+    "👉 Anisul Islam", "👉 Badrul Hasan", "👉 Faysal Chowdhury", "👉 Golam Kibria", "👉 Harun Rashid",
+    "👉 Jahangir Khan", "👉 Kamal Uddin", "👉 Lutfur Rahman", "👉 Nurul Islam", "👉 Omar Faruk",
+    "👉 Quazi Rahman", "👉 Rofiqul Islam", "👉 Selim Reza", "👉 Tofazzal Hossain", "👉 Uzzal Ahmed",
+    "👉 Wahiduzzaman", "👉 Yeamin Khan", "👉 Zahirul Haque", "👉 Abul Kalam", "👉 Bashir Ahmed",
+    "👉 Delwar Hossain", "👉 Emranul Haque", "👉 Forhad Ali", "👉 Gazi Salauddin", "👉 Hiron Mia",
+    "👉 Iqbal Khan", "👉 Jabbar Sheikh", "👉 Khalilur Rahman", "👉 Mainul Haque", "👉 Nazmul Islam",
+    "👉 Palash Das", "👉 Rashedul Islam", "👉 Salim Mia", "👉 Tanvir Hasan", "👉 Ubaidul Islam",
+    "👉 Wasiul Islam", "👉 Yusuf Ali", "👉 Zaker Hossain", "👉 Altaf Hossain", "👉 Badshah Mia",
+    "👉 Dilip Kumar", "👉 Ekramul Haque", "👉 Firoz Ahmed", "👉 Giasuddin Ahmed", "👉 Habibur Rahman",
+    "👉 Imran Khan", "👉 Jamal Uddin", "👉 Karim Khan", "👉 Liton Islam", "👉 Mozammel Haque",
+    "👉 Naimul Islam", "👉 Obaidullah", "👉 Prodip Das", "👉 Rafiqul Alam", "👉 Samsul Haque",
+    "👉 Tarikul Islam", "👉 Uttam Kumar", "👉 Waliullah", "👉 Yasin Ali", "👉 Zillur Rahman",
+    "👉 Ariful Haque", "👉 Babul Mia", "👉 Chan Mia", "👉 Dulu Mia", "👉 Emon Hossain",
+    "👉 Farid Ahmed", "👉 Golam Rabbani", "👉 Hafizur Rahman", "👉 Ilias Mia", "👉 Jahid Hasan",
+    "👉 Kazi Safi", "👉 Lokman Hossain", "👉 Montu Mia", "👉 Nayeem Ahmed", "👉 Omar Sharif",
+    "👉 Pintu Das", "👉 Razu Ahmed", "👉 Saiful Alam", "👉 Tuhin Khan", "👉 Uzzal Bhuiyan",
+    "👉 Wazed Ali", "👉 Yaqub Ali", "👉 Zulfiqar Ali", "👉 Ashraful Islam", "👉 Babu Sheikh",
+    "👉 Chandan Kumar", "👉 Dipu Kumar", "👉 Ershadul Haque", "👉 Faysal Ahmed", "👉 Gani Mia",
+    "👉 Helal Uddin", "👉 Jewel Rana", "👉 Kawsar Ahmed", "👉 Lovely Akter", "👉 Mahmudul Hasan"
 ];
 
 const products=[
  {t:"Photoshop Premium",i:"https://i.imgur.com/ztHlyUO.jpeg"},
  {t:"Canva Lifetime",i:"https://i.imgur.com/WbW6AEr.jpeg"},
  {t:"YouTube Premium",i:"https://i.imgur.com/k8RYKkU.jpeg"}
+
+
+
+  
 ];
 
 const box=document.getElementById("snBox");
