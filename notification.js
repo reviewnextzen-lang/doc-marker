@@ -55,12 +55,9 @@ const names=[
 ];
 
 const products=[
- {t:"Photoshop Premium",i:"https://i.imgur.com/ztHlyUO.jpeg"},
- {t:"Canva Lifetime",i:"https://i.imgur.com/WbW6AEr.jpeg"},
- {t:"YouTube Premium",i:"https://i.imgur.com/k8RYKkU.jpeg"}
-
-
-
+ {t:"Photoshop Premium",i:"https://i.imgur.com/ztHlyUO.jpeg",link:"https://yourlink.com/ps"},
+ {t:"Canva Lifetime",i:"https://i.imgur.com/WbW6AEr.jpeg",link:"https://yourlink.com/canva"},
+ {t:"YouTube Premium",i:"https://i.imgur.com/k8RYKkU.jpeg",link:"https://yourlink.com/yt"}
   
 ];
 
