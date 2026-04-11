@@ -1,0 +1,250 @@
+/* ===== SAFE SCOPE (ONLY THIS TOOL) ===== */
+.electricity-tool {
+  box-sizing: border-box;
+}
+
+.electricity-tool *,
+.electricity-tool *::before,
+.electricity-tool *::after {
+  box-sizing: border-box;
+}
+
+/* ===== MAIN BOX ===== */
+.electricity-tool {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ===== FLEX CONTAINER ===== */
+.electricity-tool .calc-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible; /* FIXED */
+}
+
+/* ===== PANELS ===== */
+.electricity-tool .calc-panel {
+  flex: 1 1 0;
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== RIGHT PREVIEW ===== */
+.electricity-tool .calc-preview {
+  background: #f9fafc;
+  border: 5px solid #5b5e66;
+  border-radius: 10px;
+  min-height: 400px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* ===== INPUTS ===== */
+.electricity-tool input,
+.electricity-tool select {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.electricity-tool input:focus,
+.electricity-tool select:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* ===== BUTTONS (SAFE — NO GLOBAL BREAK) ===== */
+.electricity-tool .calc-section > button,
+.electricity-tool .btn-add,
+.electricity-tool .btn-clear {
+  width: 100%;
+}
+
+/* COMMON BUTTON STYLE */
+.electricity-tool button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.electricity-tool button:hover {
+  transform: translateY(-1px);
+}
+
+/* BUTTON COLORS */
+.electricity-tool .btn-add { background: #6366f1; color: #fff; }
+.electricity-tool .btn-clear { background: #ef4444; color: #fff; }
+.electricity-tool .btn-pdf { background: #0ea5e9; color: #fff; }
+.electricity-tool .btn-print { background: #22c55e; color: #fff; }
+
+/* REMOVE STICKY (FIX CONFLICT) */
+.electricity-tool .btn-add {
+  position: static;
+}
+
+/* ===== FLEX ROW (SAFE REPLACEMENT) ===== */
+.electricity-tool .flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+.electricity-tool .flex-row button {
+  flex: 1;
+}
+
+/* ===== COST ROW ===== */
+.electricity-tool .cost-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.electricity-tool .cost-row h4 {
+  flex: 1;
+  margin: 0;
+}
+
+.electricity-tool .cost-row input {
+  flex: 1;
+}
+
+/* ===== CHECK CARDS ===== */
+.electricity-tool .system-select {
+  display: flex;
+  gap: 8px;
+}
+
+.electricity-tool .check-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.electricity-tool .check-card input {
+  display: none;
+}
+
+.electricity-tool .checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4f46e5;
+  border-radius: 4px;
+}
+
+.electricity-tool .check-card input:checked + .checkmark {
+  background: #4f46e5;
+}
+
+/* ===== HEADINGS ===== */
+.electricity-tool .calc-section h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* ===== GRID ===== */
+.electricity-tool .calc-row {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.electricity-tool .calc-row.top {
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) auto;
+}
+
+.electricity-tool .calc-row.bottom {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+
+/* ===== ITEM CARD ===== */
+.electricity-tool .calc-item {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  transition: 0.25s;
+  border: 1px solid transparent;
+}
+
+.electricity-tool .calc-item:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+}
+
+/* ===== REMOVE BUTTON ===== */
+.electricity-tool .calc-remove-btn {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.electricity-tool .calc-remove-btn:hover {
+  background: #fecaca;
+  transform: scale(1.05);
+}
+
+/* ===== TABLE ===== */
+.electricity-tool .calc-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.electricity-tool .calc-preview thead {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: #fff;
+}
+
+.electricity-tool .calc-preview th,
+.electricity-tool .calc-preview td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .electricity-tool .calc-container {
+    flex-direction: column;
+  }
+
+  .electricity-tool .calc-row.top,
+  .electricity-tool .calc-row.bottom {
+    grid-template-columns: 1fr;
+  }
+}
