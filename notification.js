@@ -55,10 +55,11 @@ const names=[
 ];
 
 const products=[
- {t:"Photoshop Premium",i:"https://i.imgur.com/ztHlyUO.jpeg",link:"https://yourlink.com/ps"},
- {t:"Canva Lifetime",i:"https://i.imgur.com/WbW6AEr.jpeg",link:"https://yourlink.com/canva"},
- {t:"YouTube Premium",i:"https://i.imgur.com/k8RYKkU.jpeg",link:"https://yourlink.com/yt"}
-  
+ {t:"Surfshark VPN",i:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpmH7BQNeXQ9HZ7PmR9M7QIErSX2VqbZu1OI9EpaaIUMOG9FcbXd6XDW2UGqZX_fBQwA-K0ptl6BTe1C3PSdn8Us0eQtHHpbRVEz8i3c5UAvz4WTiT8nvU4aQvLh1Sx40jr1Vn6cqfKPfmDnddh6UjZeI3YEw_fy-4AuN1SR0km2QeFqofQor_eP1mtjWJ/s1600/VPN.webp",link:"#"},
+ {t:"Bangla Landing Page",i:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVGg0YYnxoCdfPHPPJDv5yXNGBmWomtWvZ7mImJ_JCZ3ugaRAyzQ1zFgDKGPuM076_H-AlCeoJ26kVv8Om0wW7EcE8_THkNvBK8Eap1EDeqvP_FvG-PZM7DNK6D451plLcF1Q5fIQIdqobZKF0xpBaR_i0k5AgvOdPSefdlZ3hxK55ZxGX3rGWkMnKGcgf/s1600/Bangla-Landing-Page.webp",link:"#"},
+ {t:"300+CV Bundle",i:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg_B9paQPdPuZ_N7X1iAdP9vjVtHGdWYaNRQ9nsdZr8lESA5V_74w8dhMP2vU_2dxA_J_X6QbjVUFsa4sEhA3Wa6Cqia08phbsaH8hLZLVmn8rzTrnomBRslSOpDAOrmcybLqAhXW6F-i9LcxCivQY7ylfROl-oYVJcOHCfSgyn9sxislJkr8dkcQktLhH/s1600/300+cvbundle.webp",link:"#"},
+ {t:"Truecaller Premium",i:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR8W8WROeVxHgdk4r8m_GrQZkPymlAho7sxz97zTF0r6t0jh2W6YpaE5bcxM86ZLbATFEn2EGVvEawlp0B7hOgO_XErQV4C-pFofFQAOaPiOqSPXGjPs6ny5mEHgwyE9z8GMo1lYFZ2r3sap3argt4i9qwuSnAH5-cQc0h42ovO7Qf0LuQD4J_dQXm8rzS/s1600/Truecaller-premium.png",link:"#"},
+  {t:"IMO Pro",i:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHm-uLdgjHvtFKS_xYdrDiVTkmloB98xRrp6WlnFeJzadTz9PHcuXoGjdRIVTEkkI3RTnpy1FO2Ig0yKjmgKB6l4-dmQ4OtlAhQuCE70ANmifyxizAVD53R9G7v9JKsreivGXvGUshWB21VwXSgkCxM8cgvNvbiGqJkkehYGBabkB5ezrN2uGn2xfdBrGt/s1600/Imo-pro.png",link:"#"}
 ];
 
 const box=document.getElementById("snBox");
