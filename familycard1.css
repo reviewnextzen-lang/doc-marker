@@ -144,6 +144,15 @@
   }
   .fc-btn-action:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.2); transform: translateY(-2px); }
 
+#fc-pdf-container {
+    font-family: 'Noto Sans Bengali', 'SolaimanLipi', sans-serif;
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    padding: 20mm;
+}
+
+
   /* Responsive Mobile view calculations */
   @media (max-width: 1024px) {
       .fc-grid-layout { grid-template-columns: 1fr; }
