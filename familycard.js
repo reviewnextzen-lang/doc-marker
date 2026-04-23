@@ -183,6 +183,62 @@ function openFamilyCardModal() {
     });
   }
 
+function printFamilyCard() {
+    const content = document.getElementById('fc-pdf-container').innerHTML;
+
+    const printWindow = window.open('', '', 'width=900,height=650');
+
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Print Family Card</title>
+
+            <!-- Bangla Font -->
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700;900&display=swap" rel="stylesheet">
+
+            <style>
+                body {
+                    font-family: 'Noto Sans Bengali', 'SolaimanLipi', sans-serif;
+                    padding: 20px;
+                    color: #000;
+                }
+
+                @page {
+                    size: A4;
+                    margin: 20mm;
+                }
+
+                * {
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+            </style>
+        </head>
+        <body>
+            ${content}
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+
+    // Wait for fonts to load
+    printWindow.onload = function () {
+        setTimeout(() => {
+            printWindow.focus();
+            printWindow.print();
+            printWindow.close();
+        }, 500);
+    };
+}
+
+
+
+
+
+
+
+
   function resetFamilyCard() {
       const inputs = document.querySelectorAll('#familyCardModal input, #familyCardModal textarea');
       inputs.forEach(input => input.value = '');
