@@ -1,0 +1,244 @@
+  .dob-title {
+    font-family: "SolaimanLipi", sans-serif;
+}
+/* আপন&#2494;র অন&#2509;য&#2494;ন&#2509;য CSS ক&#2507;ড */
+  .dob-modal-content { 
+      max-width: 900px !important; /* Adjust as needed */
+      width: 98% !important; 
+      display: flex; 
+      flex-direction: column; 
+      font-family: 'SolaimanLipi', sans-serif !important;
+  }
+  .dob-main-box { 
+      border: 1px solid #7c3aed; 
+      border-radius: 20px; 
+      padding: 20px; 
+      background: #fff; 
+      display: flex; 
+      flex-direction: column; 
+      flex: 1; 
+      font-family: 'SolaimanLipi', sans-serif !important; 
+  }
+  .dob-grid-layout { 
+      display: grid; 
+      grid-template-columns: 1fr; /* Default to single column for forms */
+      gap: 20px; 
+      flex: 1; 
+  }
+  .dob-input-side { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 15px; 
+      padding-right: 0; /* No padding on right for single column */
+      padding-bottom: 20px; 
+  }
+
+  /* Tab Styles */
+  .dob-tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+  .dob-tab-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  font-family: 'SolaimanLipi', sans-serif;
+    font-weight: bold;
+    color: #555;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 5px;
+  }
+  .dob-tab-btn:hover {
+    background: #e0e0e0;
+    color: #333;
+  }
+  .dob-tab-btn.active {
+    background: #7c3aed;
+    color: #fff;
+    border-bottom: 2px solid #7c3aed;
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .dob-tab-content {
+    padding: 10px;
+  }
+
+  /* Common Form Styles (my-input-form) */
+  .my-input-form {
+      max-width: 100%;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      font-family: 'SolaimanLipi', sans-serif;
+      box-sizing: border-box;
+  }
+
+  .my-input-form h3 {
+      text-align: center;
+      font-size: 28px; /* Adjusted for modal */
+      margin-bottom: 15px;
+      color: #1740D1;
+  }
+
+  .my-input-form h2 {
+      text-align: center;
+      font-size: 20px; /* Adjusted for modal */
+      color: #13B304;
+      margin-bottom: 20px;
+  }
+
+  .input-item {
+      margin-bottom: 15px;
+  }
+
+  .input-item label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 15px; /* Adjusted for modal */
+      color: #333;
+  }
+
+  .input-group {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+  }
+
+  .input-group input, .input-item input[type="number"], .input-item input[type="text"] {
+      flex: 1 1 auto;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #28a745;
+      font-size: 18px; /* Adjusted for modal */
+      min-width: 150px;
+      box-sizing: border-box;
+      font-family: 'SolaimanLipi', sans-serif;
+  }
+
+  .input-group button {
+      padding: 10px 15px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.3s;
+      font-family: 'SolaimanLipi', sans-serif;
+      font-size: 15px; /* Adjusted for modal */
+  }
+
+  .input-group button:hover {
+      background: #218838;
+  }
+  
+  .input-button {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .input-button input[type="submit"] {
+      padding: 12px 25px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'SolaimanLipi', sans-serif;
+      transition: background 0.3s;
+  }
+
+  .input-button input[type="submit"]:hover {
+      background: #0056b3;
+  }
+
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+      .dob-modal-content {
+          padding: 10px;
+      }
+      .dob-main-box {
+          padding: 15px;
+          border-radius: 10px;
+      }
+      .dob-main-box h2 {
+          font-size: 22px;
+          margin-bottom: 15px;
+      }
+      .dob-header-image img {
+        height: 80px;
+        width: 80px;
+      }
+      .dob-tab-buttons {
+        flex-wrap: wrap;
+      }
+      .dob-tab-btn {
+        flex-grow: 1;
+        margin-bottom: 10px;
+      }
+      .my-input-form h3 {
+          font-size: 24px;
+      }
+      .my-input-form h2 {
+          font-size: 18px;
+      }
+      .input-group {
+          flex-direction: column;
+      }
+      .input-group button {
+          width: 100%;
+      }
+      .input-group input, .input-item input[type="number"], .input-item input[type="text"] {
+          font-size: 16px;
+          padding: 8px;
+      }
+      .input-item label {
+        font-size: 14px;
+      }
+      .input-button input[type="submit"] {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .dob-main-box h2 {
+          font-size: 18px;
+      }
+      .dob-header-image img {
+        height: 60px;
+        width: 60px;
+      }
+      .my-input-form h3 {
+          font-size: 20px;
+      }
+      .my-input-form h2 {
+          font-size: 16px;
+      }
+      .input-group input, .input-item input[type="number"], .input-item input[type="text"] {
+          font-size: 14px;
+          padding: 6px;
+      }
+      .input-item label {
+        font-size: 13px;
+      }
+      .input-group button {
+        font-size: 13px;
+        padding: 8px 10px;
+      }
+      .input-button input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+  }
