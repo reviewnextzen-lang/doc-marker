@@ -52,19 +52,6 @@ const landTemplates = {
 
 };
 
-function openLandModal(){
-
-    document.getElementById('landMakerModal').style.display = 'flex';
-
-    setLandLang(landLang);
-
-}
-
-function closeLandModal(){
-
-    document.getElementById('landMakerModal').style.display = 'none';
-
-}
 
 function setLandLang(lang){
 
