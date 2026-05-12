@@ -241,7 +241,7 @@ function updateLaw() {
 				${lawLang === 'bn' ? 'উপজেলা' : 'Upazila'},
 
 				${district}
-				${lawLang === 'bn' ? 'জেলা' : 'District'}.
+				${lawLang === 'bn' ? 'জেলা' : 'District'}
 
 			</p>
 
