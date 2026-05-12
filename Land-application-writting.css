@@ -1,0 +1,30 @@
+#landappMakerModal input,
+#landappMakerModal select,
+#landappMakerModal textarea {
+
+	font-family: &quot;SolaimanLipi&quot;, Arial, sans-serif !important;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	outline: none;
+	margin-bottom: 5px;
+
+}
+
+#landappMakerModal input::placeholder,
+#landappMakerModal textarea::placeholder {
+
+	font-family: &#39;SolaimanLipi&#39;, sans-serif !important;
+	opacity: 0.7;
+
+}
+
+#landappMakerModal i.fa-solid,
+#landappMakerModal .fa-brands {
+
+	font-family: &quot;Font Awesome 6 Free&quot; !important;
+	font-weight: 900 !important;
+	display: inline-block !important;
+
+}
