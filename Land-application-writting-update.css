@@ -1,0 +1,103 @@
+#landappMakerModal input,
+#landappMakerModal select,
+#landappMakerModal textarea {
+
+	font-family: &quot;SolaimanLipi&quot;, Arial, sans-serif !important;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	outline: none;
+	margin-bottom: 5px;
+
+}
+
+#landappMakerModal input::placeholder,
+#landappMakerModal textarea::placeholder {
+
+	font-family: &#39;SolaimanLipi&#39;, sans-serif !important;
+	opacity: 0.7;
+
+}
+
+#landappMakerModal i.fa-solid,
+#landappMakerModal .fa-brands {
+
+	font-family: &quot;Font Awesome 6 Free&quot; !important;
+	font-weight: 900 !important;
+	display: inline-block !important;
+
+}
+
+/* RESPONSIVE FIX FOR LAND APPLICATION MAKER */
+
+@media (max-width: 1024px) {
+
+	#landappMakerModal .fq-main-layout {
+		grid-template-columns: 1fr !important;
+	}
+
+	#landappMakerModal .leaflet-inputs {
+		padding-right: 0 !important;
+	}
+
+	#landappMakerModal .leaflet-preview-area {
+		margin-top: 15px;
+	}
+
+	#law-a4-page {
+		width: 100% !important;
+		transform: scale(0.95);
+		transform-origin: top center;
+	}
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+	#landappMakerModal .cp-box {
+		padding: 12px !important;
+	}
+
+	#landappMakerModal h2 {
+		font-size: 18px !important;
+	}
+
+	#landappMakerModal .fq-main-layout {
+		gap: 10px !important;
+	}
+
+	#landappMakerModal input,
+	#landappMakerModal select,
+	#landappMakerModal textarea {
+		font-size: 14px !important;
+		padding: 8px !important;
+	}
+
+	#landappMakerModal .st-input-group {
+		padding: 10px !important;
+	}
+
+	#law-a4-page {
+		transform: scale(0.85);
+	}
+
+	#landappMakerModal .fq-lang-box {
+		transform: scale(0.95);
+	}
+
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+	#law-a4-page {
+		transform: scale(0.75);
+	}
+
+	#landappMakerModal .fq-main-layout {
+		gap: 8px !important;
+	}
+
+}
