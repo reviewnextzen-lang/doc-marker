@@ -3,8 +3,8 @@ let isQLibrariesLoaded = false;
 
   // ডিফল্ট কোম্পানি ও শর্তাবলী ডাটা
   const defaultCompanyName = "Your Company Name";
-  const defaultCompanyContact = "Mob: 01834030544, 01403178709";
-  const defaultCompanyAddress = "Comilla, Chittagong, Bangladesh.";
+  const defaultCompanyContact = "Mob: 01700112255, 01600001122";
+  const defaultCompanyAddress = "Dhaka, Bangladesh.";
   const defaultTermsAndConditions = 
     "1. Scope Includes Delivery & Installation of above mentioned items.\n" +
     "2. Any additional work or materials will be charged on actual.\n" +
@@ -186,7 +186,7 @@ let isQLibrariesLoaded = false;
 
       const senderName = document.getElementById('qSenderName').value.trim();
       const clientName = document.getElementById('qClientName').value.trim();
-      const qNum = document.getElementById('qNumber').value.trim() || 'ALM0207-202306';
+      const qNum = document.getElementById('qNumber').value.trim() || 'RJEC0207-205466';
 
       if (!senderName || !clientName) {
           alert('Please fill in both Company Name and Client/Billing Name.');
